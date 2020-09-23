@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>E-Commerce</title>
+
+    <style>
+
+/* Slideshow container */
+.slideshow-container {
+	width: 100%;
+  position: relative;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.active {
+  background-color: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*==================== 
+	Social Links 
+====================== */
+    	.fa {
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+/*==================== 
+	Footer 
+====================== */
+
+/* Main Footer */
+footer .main-footer{	padding: 20px 0;	background: #252525;}
+footer ul{	padding-left: 0;	list-style: none;}
+
+/* Copy Right Footer */
+.footer-copyright {	background: #222;	padding: 5px 0;}
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright nav {    float: right;    margin-top: 5px;}
+.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
+.footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
+.footer-copyright nav ul li a{	color: #969696;}
+.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
+.footer-copyright p {	color: #969696;	margin: 2px 0 0;}
+
+/* Footer Top */
+.footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+
+/* Footer transparent */
+footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
+footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
+
+/* Footer light */
+footer.light .footer-top{	background: #f9f9f9;}
+footer.light .main-footer{	background: #f9f9f9;}
+footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
+
+/* Footer 4 */
+.footer- .logo {    display: inline-block;}
+
+/*==================== 
+	Widgets 
+====================== */
+.Footer{
+	width: 100%;
+}
+.widget{	padding: 20px;	margin-bottom: 40px;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget li a{	color: #ff8d1e;}
+.widget li a:hover{	color: #4b92dc;}
+.widget-title {margin-bottom: 20px;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: right;	background: #7f7f7f;}
+
+.typo-light h1, 
+.typo-light h2, 
+.typo-light h3, 
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff;}
+
+ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
+ul.social-footer2 li {display: inline-block;padding: 0;}
+ul.social-footer2 li a:hover {background-color:#ff8d1e;}
+ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
+.btn{background-color: #ff8d1e; color:#fff;}
+.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+-webkit-transition: all 250ms ease-in-out 0s;
+-moz-transition: all 250ms ease-in-out 0s;
+-ms-transition: all 250ms ease-in-out 0s;
+-o-transition: all 250ms ease-in-out 0s;
+transition: all 250ms ease-in-out 0s;
+
+}
+
+/* Carousel */
+
+h2 {
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 10px 0 30px;
+}
+h2 b {
+	color: #ffc000;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	background: rgba(0, 0, 0, 0.2);
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.carousel {
+	margin: 0% 0% 2% 0%;
+}
+.carousel .carousel-item {
+	min-height: 330px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.carousel .carousel-item .img-box {
+	background-color: none;
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.carousel .carousel-item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .carousel-item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .carousel-item .btn {
+	color: #333;
+	border-radius: 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin-top: 5px;
+	line-height: 16px;
+}
+.carousel .carousel-item .btn:hover, .carousel .carousel-item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 15px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 100px;
+	width: 40px;
+	background: none;
+	margin: auto 0;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -16px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}	
+.carousel .carousel-indicators {
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border-color: transparent;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 1);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.1);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+.card-body a:hover{
+	color: orange;
+}
+
+/* Sign Page */
+
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-repeat: no-repeat;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+width: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: white;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+						/* Sign Up */
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+/* Cards Products */
+.cardprod{
+	width: 100%; 
+	display: inline-block; 
+	background-color: #EBEBED;
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 2% 0%;
+}
+.prodcard{
+	margin: 0% 2% 2% 2%; 
+	width: 21%; 
+	float: left;
+}
+
+.size img
+{
+	width: 100%;
+	height: 250px;
+}
+.cardbuy{
+	margin: 5% 0% 0% 35%;
+}
+
+.seemore{
+	font-size: 12px;
+	font-family: 'Numans', sans-serif;
+}
+.seemore:hover{
+	color: orange;
+}
+</style>
+
+</head>
+<body>
+
+<!--Navbar -->
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">LOGO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="margin-left: 10px;" class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          Home
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          CUSTOMER SERVICE
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">
+          TODAY'S DEAL
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          COLLECTION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#menproduct">Men's Collections</a>
+          <a class="dropdown-item" href="#">Ladie's Collection</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Kid's Collections</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          REGISTRATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <button style="width: 100%;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#customerform">As Customer </button>
+          <button style="width: 100%;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#companyform">As Company </button>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Admin Panel</a>
+        </div>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" id="search" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" onclick="searchfunction()">Search</button>
+    </div>
+  </div>
+</nav>
+<!--/.Navbar -->
+		
+		
+				<!-- ########## Main Body ########## -->
+<div class="modal fade" id="companyform" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><b>Company Portal</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      	<div class="container">
+        	<div class="panel panel-default">
+
+			 			<div class="panel-body">
+			    		<form role="form" action="" method="post">
+			    			{% csrf_token %}
+			    			<div class="form-group">
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			    			</div>
+			    			<br>
+			    			<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			    			<br>
+			    			<center><input type="checkbox" name="checkbox"> Remember me</center>
+			    			
+			    			<input type="submit" value="Signin" class="btn btn-info btn-block">
+			    			
+			    		</form>
+				</div>
+				<div class="card-footer">
+					<div class="d-flex justify-content-center">
+						<div class="alert alert-info" role="alert">
+						  <u>Forgot Password</u>? Please refer to the <b style="color: blue;">owner of this site.</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Customer Forms -->
+
+<div class="modal fade" id="customerform" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><b>SignIn</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      	<div class="container">
+        	<div class="panel panel-default">
+
+			 			<div class="panel-body">
+			    		<form role="form" action="{% url 'signIn' %}" method="post">
+			    			{% csrf_token %}
+			    			<input style="margin: 0% 0% 2% 0%;" type="text" name="user_name" id="user_name" class="form-control input-sm" placeholder="User Name">
+
+			    			<div class="form-group">
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			    			</div>
+
+			    			<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			    			
+			    			<input type="checkbox" name="checkbox"> Remember me
+			    			
+			    			<input type="submit" value="Signin" class="btn btn-info btn-block">
+			    			
+			    		</form>
+				</div>
+				<div class="card-footer">
+					<div class="d-flex justify-content-center links">
+						<p style="color: black;">Don't have an account?</p>
+						<a href="{% url 'Customer Sign Up form' %}">SignUp</a>
+					</div>
+					<div class="d-flex justify-content-center">
+						<a href="#">Forgot your password?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slider -->
+
+<div class="slideshow-container">
+{% for i in homeslider %}
+<div class="mySlides fade">
+  <img src="/media/{{i.image}}" style="width:100%">
+  <div class="text">{{i.description}}</div>
+</div>
+{% endfor %}
+</div>
+<br>
+
+<div style="text-align:center">
+	{% for i in homeslider %}
+  <span class="dot"></span>
+  {% endfor %} 
+</div>
+
+<!-- End Slider -->
+
+
+<div class="container">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <ol style="display: none;" class="carousel-indicators">
+	    <li data-target="#basecarouselIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#basecarouselIndicators" data-slide-to="1" class="active"></li>
+	  </ol>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Top <b>Products</b><a class="seemore" href="#"> See more</a></h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+ 
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						{% for i in topprod|slice:"0:4" %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<a href="#"><img src="/media/{{i.top_prod_image}}" class="img-fluid" alt=""></a>
+								</div>
+								<div class="thumb-content">
+									<h4>{{i.name}}</h4>
+									<p class="item-price"><strike>${{i.strikeprice}}</strike> <span>${{i.price}}</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						{% endfor %}	
+					</div>
+				</div>
+
+<!-- First Carousel Ends Here -->
+
+
+				<div class="carousel-item">
+					<div class="row">
+						{% for i in topprod|slice:"4:8" %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<a href="#"><img src="/media/{{i.top_prod_image}}" class="img-fluid" alt=""></a>
+								</div>
+								<div class="thumb-content">
+									<h4>{{i.name}}</h4>
+									<p class="item-price"><strike>${{i.strikeprice}}</strike> <span>${{i.price}}</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- End Block -->
+
+<!-- Cards -->
+<div class="cardprod">
+<div class="products">
+	{% for i in prodcard %}
+	<div class="prodcard">
+		  
+		  <div class="card-body">
+		    <b><h10 class="card-title">{{i.cardname}}</h10></b>
+		   <div class="size">
+		    <img   
+		    src="/media/{{i.cardImage}}"
+		    
+		    alt="..."
+		  />
+		  </div>
+		    <p class="card-text">
+		      
+		    </p>
+		    
+		  </div>
+		  <div class="cardbuy">
+		  	<a href="#!">{{i.cardbuy}}</a>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+</div>
+<!-- End Block -->
+
+
+
+<!-- ###################################### -->
+
+<div class="container">
+	<div id="carousel2" class="carousel slide" data-ride="carousel">
+	  <ol style="display: none;" class="carousel-indicators">
+	    <li data-target="#basecarouselIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#basecarouselIndicators" data-slide-to="1" class="active"></li>
+	  </ol>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Trending <b>Products</b><a class="seemore" href="#"> See more</a></h2></h2>
+			<div id="carousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+ 
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						{% for i in topprod|slice:"0:4" %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<a href="#"><img src="/media/{{i.top_prod_image}}" class="img-fluid" alt=""></a>
+								</div>
+								<div class="thumb-content">
+									<h4>{{i.name}}</h4>
+									<p class="item-price"><strike>${{i.strikeprice}}</strike> <span>${{i.price}}</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						{% endfor %}
+						
+					</div>
+				</div>
+
+<!-- First Carousel Ends Here -->
+
+
+				<div class="carousel-item">
+					<div class="row">
+						{% for i in topprod|slice:"4:8" %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<a href="#"><img src="/media/{{i.top_prod_image}}" class="img-fluid" alt=""></a>
+								</div>
+								<div class="thumb-content">
+									<h4>{{i.name}}</h4>
+									<p class="item-price"><strike>${{i.strikeprice}}</strike> <span>${{i.price}}</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#carousel2" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#carousel2" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- ######------- Men Products -------########## -->
+
+<div class="container">
+	<div id="menproduct" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#basecarouselIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#basecarouselIndicators" data-slide-to="1" class="active"></li>
+	  </ol>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Men's Dress <b>Shirts</b><a class="seemore" href="#"> See more</a></h2></h2>
+			<div id="menproduct" class="carousel slide" data-ride="carousel" data-interval="0">
+ 
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						{% for i in menprod|slice:"0:4" %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<a href="#"><img src="/media/{{i.men_prod_image}}" class="img-fluid" alt=""></a>
+								</div>
+								<div class="thumb-content">
+									<h4>{{i.name}}</h4>
+									<p class="item-price"><strike>${{i.strikeprice}}</strike> <span>${{i.price}}</span></p>
+									<br>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						{% endfor %}
+						
+					</div>
+				</div>
+<!-- First Carousel Ends Here -->
+				<div class="carousel-item">
+					<div class="row">
+						{% for i in menprod|slice:"4:8" %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<a href="#"><img src="/media/{{i.men_prod_image}}" class="img-fluid" alt=""></a>
+								</div>
+								<div class="thumb-content">
+									<h4>{{i.name}}</h4>
+									<p class="item-price"><strike>${{i.strikeprice}}</strike> <span>${{i.price}}</span></p>
+									
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#menproduct" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#menproduct" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div class="Footer">
+	<hr>
+
+	<footer id="footer" class="footer-1">
+	<div class="main-footer widgets-dark typo-light">
+	<div class="container">
+	<div class="row">
+	  
+	<div class="col-xs-12 col-sm-6 col-md-3">
+	<div class="widget subscribe no-box">
+	<h5 class="widget-title">COMPANY NAME<span></span></h5>
+	<p>About the company, little discription will goes here.. </p>
+	</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-3">
+	<div class="widget no-box">
+	<h5 class="widget-title">Quick Links<span></span></h5>
+	<ul class="thumbnail-widget">
+	<li>
+	<div class="thumb-content"><a href="#.">HOME</a></div>	
+	</li>
+	<li>
+	<div class="thumb-content"><a href="#.">MEN's COLLECTIONS</a></div>	
+	</li>
+	<li>
+	<div class="thumb-content"><a href="#.">LATEST COLLECTIONS</a></div>	
+	</li>
+	<li>
+	<div class="thumb-content"><a href="#.">KID's COLLECTIONS</a></div>	
+	</li>
+	<li>
+	<div class="thumb-content"><a href="#.">About</a></div>	
+	</li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-3">
+	<div class="widget no-box">
+	<h5 class="widget-title">Online Shopping Site<span></span></h5>
+	<p>Your Statisfaction is our first periority.</p>
+	<a class="btn" href="#." target="_blank">Register Now</a>
+	</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-3">
+
+	<div class="widget no-box">
+	<h5 class="widget-title">Contact Us<span></span></h5>
+
+	<p><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
+	<ul class="social-footer2">
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-pinterest"></a>
+	<a href="#" class="fa fa-snapchat-ghost"></a>
+	<a href="#" class="fa fa-skype"></a>
+	</ul>
+	</div>
+	</div>
+
+	</div>
+	</div>
+	</div>
+	  
+	<div class="footer-copyright">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12 text-center">
+	<p>Copyright Company Name © <script>document.write(new Date().getFullYear());</script>. All rights reserved.</p>
+	</div>
+	</div>
+	</div>
+	</div>
+	</footer>
+</div>
+<script>
+	function searchfunction(){
+		var search = document.getElementById('search').value;
+		//console.log(search);
+		find(search)
+	}
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
